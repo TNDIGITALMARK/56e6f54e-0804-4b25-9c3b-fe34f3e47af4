@@ -19,8 +19,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Elegant Flora Boutique",
-  description: "Beautiful AI-powered website creation platform",
+  title: "SwiftRoute Transportation - Reliable Box Truck Delivery Services",
+  description: "Professional box truck delivery services for businesses and individuals. Same-day and scheduled delivery options across the tri-city metropolitan area. Licensed and insured since 2015.",
 };
 
 export default function RootLayout({
