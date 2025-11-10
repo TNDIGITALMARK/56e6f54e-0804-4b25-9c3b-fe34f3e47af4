@@ -63,8 +63,8 @@ export default function ContactPage() {
         {/* Hero Section */}
         <section className="bg-[hsl(214,53%,25%)] text-white py-16">
           <div className="container mx-auto px-4">
-            <h1 className="text-5xl font-bold mb-4">Get Your Free Quote</h1>
-            <p className="text-xl text-white/90">
+            <h1 className="text-5xl font-bold !text-white mb-4">Get Your Free Quote</h1>
+            <p className="text-xl !text-white">
               Fill out the form below for an instant preliminary quote. Final price confirmed upon inspection.
             </p>
           </div>
@@ -254,7 +254,7 @@ export default function ContactPage() {
 
                     <button
                       type="submit"
-                      className="w-full px-8 py-4 bg-[hsl(36,90%,55%)] text-white rounded font-semibold text-lg hover:bg-[hsl(36,90%,50%)] transition-colors"
+                      className="w-full px-8 py-4 bg-[hsl(36,90%,55%)] !text-white rounded font-semibold text-lg hover:bg-[hsl(36,90%,50%)] transition-colors"
                     >
                       Calculate Estimated Price
                     </button>

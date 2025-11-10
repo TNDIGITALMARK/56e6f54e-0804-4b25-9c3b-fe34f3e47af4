@@ -25,7 +25,7 @@ export default function TestimonialsSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">What Our Clients Say</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-[hsl(var(--text-light))] max-w-2xl mx-auto">
             Don't just take our word for it - hear from our satisfied customers
           </p>
         </div>
@@ -47,7 +47,7 @@ export default function TestimonialsSection() {
               </div>
 
               {/* Testimonial Text */}
-              <p className="text-white/95 mb-6 leading-relaxed">
+              <p className="!text-white mb-6 leading-relaxed">
                 "{testimonial.text}"
               </p>
 
@@ -63,8 +63,8 @@ export default function TestimonialsSection() {
                   />
                 </div>
                 <div>
-                  <p className="font-semibold text-lg">{testimonial.name}</p>
-                  <p className="text-white/80 text-sm">{testimonial.title}</p>
+                  <p className="font-semibold text-lg !text-white">{testimonial.name}</p>
+                  <p className="!text-white text-sm">{testimonial.title}</p>
                 </div>
               </div>
             </div>
@@ -75,19 +75,19 @@ export default function TestimonialsSection() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 max-w-4xl mx-auto">
           <div className="text-center">
             <div className="text-4xl font-bold text-[hsl(211,71%,58%)] mb-2">10+</div>
-            <p className="text-gray-600">Years Experience</p>
+            <p className="text-[hsl(var(--text-light))]">Years Experience</p>
           </div>
           <div className="text-center">
             <div className="text-4xl font-bold text-[hsl(211,71%,58%)] mb-2">5,000+</div>
-            <p className="text-gray-600">Deliveries</p>
+            <p className="text-[hsl(var(--text-light))]">Deliveries</p>
           </div>
           <div className="text-center">
             <div className="text-4xl font-bold text-[hsl(211,71%,58%)] mb-2">98%</div>
-            <p className="text-gray-600">On-Time Rate</p>
+            <p className="text-[hsl(var(--text-light))]">On-Time Rate</p>
           </div>
           <div className="text-center">
             <div className="text-4xl font-bold text-[hsl(211,71%,58%)] mb-2">4.9/5</div>
-            <p className="text-gray-600">Customer Rating</p>
+            <p className="text-[hsl(var(--text-light))]">Customer Rating</p>
           </div>
         </div>
       </div>

@@ -40,7 +40,7 @@ export default function Header() {
           <div className="hidden md:flex items-center gap-4">
             <a
               href="tel:555-TRANSPORT"
-              className="flex items-center gap-2 px-4 py-2 bg-[hsl(36,90%,55%)] text-white rounded hover:bg-[hsl(36,90%,50%)] transition-colors font-medium"
+              className="flex items-center gap-2 px-4 py-2 bg-[hsl(36,90%,55%)] !text-white rounded hover:bg-[hsl(36,90%,50%)] transition-colors font-medium"
             >
               <span>📞</span>
               <span>555-TRANSPORT</span>
@@ -98,7 +98,7 @@ export default function Header() {
               </Link>
               <a
                 href="tel:555-TRANSPORT"
-                className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-[hsl(36,90%,55%)] text-white rounded hover:bg-[hsl(36,90%,50%)] transition-colors font-medium mt-2"
+                className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-[hsl(36,90%,55%)] !text-white rounded hover:bg-[hsl(36,90%,50%)] transition-colors font-medium mt-2"
               >
                 <span>📞</span>
                 <span>555-TRANSPORT</span>

@@ -71,8 +71,8 @@ export default function ServicesPage() {
         <section className="bg-[hsl(214,53%,25%)] text-white py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl">
-              <h1 className="text-5xl font-bold mb-6">Our Services & Pricing</h1>
-              <p className="text-xl text-white/90 leading-relaxed">
+              <h1 className="text-5xl font-bold !text-white mb-6">Our Services & Pricing</h1>
+              <p className="text-xl !text-white leading-relaxed">
                 Professional box truck delivery services with transparent pricing.
                 Whether you need same-day delivery or scheduled service, we have a solution for you.
               </p>
@@ -112,7 +112,7 @@ export default function ServicesPage() {
 
                     <Link
                       href="/contact"
-                      className="block w-full text-center px-6 py-3 bg-[hsl(36,90%,55%)] text-white rounded font-semibold hover:bg-[hsl(36,90%,50%)] transition-colors"
+                      className="block w-full text-center px-6 py-3 bg-[hsl(36,90%,55%)] !text-white rounded font-semibold hover:bg-[hsl(36,90%,50%)] transition-colors"
                     >
                       Get Quote
                     </Link>
@@ -233,7 +233,7 @@ export default function ServicesPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 bg-[hsl(36,90%,55%)] text-white rounded font-semibold text-lg hover:bg-[hsl(36,90%,50%)] transition-colors shadow-lg"
+              className="inline-flex items-center justify-center px-8 py-4 bg-[hsl(36,90%,55%)] !text-white rounded font-semibold text-lg hover:bg-[hsl(36,90%,50%)] transition-colors shadow-lg"
             >
               Get Your Free Quote
             </Link>

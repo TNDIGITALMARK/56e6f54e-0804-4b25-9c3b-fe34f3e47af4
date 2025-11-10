@@ -27,9 +27,9 @@ export default function ServicesSection() {
   return (
     <section className="py-20 bg-[hsl(0,0%,96%)]">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 flex flex-col items-center">
           <h2 className="text-4xl font-bold mb-4">Our Services</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-[hsl(var(--text-light))] max-w-2xl text-center">
             Professional delivery solutions tailored to your needs with transparent pricing
             and reliable service you can count on.
           </p>
@@ -50,7 +50,7 @@ export default function ServicesSection() {
 
                 {/* Content */}
                 <h3 className="text-2xl font-semibold mb-3">{service.title}</h3>
-                <p className="text-gray-600 mb-4 leading-relaxed">{service.description}</p>
+                <p className="text-[hsl(var(--text-light))] mb-4 leading-relaxed">{service.description}</p>
                 <p className="text-[hsl(211,71%,58%)] font-semibold text-lg mb-6">
                   {service.price}
                 </p>
@@ -70,7 +70,7 @@ export default function ServicesSection() {
         <div className="text-center mt-12">
           <Link
             href="/services"
-            className="inline-flex items-center justify-center px-8 py-3 bg-[hsl(36,90%,55%)] text-white rounded font-semibold hover:bg-[hsl(36,90%,50%)] transition-colors"
+            className="inline-flex items-center justify-center px-8 py-3 bg-[hsl(36,90%,55%)] !text-white rounded font-semibold hover:bg-[hsl(36,90%,50%)] transition-colors"
           >
             View All Services
           </Link>

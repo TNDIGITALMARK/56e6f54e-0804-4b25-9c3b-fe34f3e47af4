@@ -20,6 +20,16 @@ const nextConfig: NextConfig = {
   // Basic performance settings
   poweredByHeader: false,
 
+  // Enable webpack polling for file watching (useful in WSL/Docker)
+  webpack: (config) => {
+    config.watchOptions = {
+      poll: 1000, // Check for changes every second
+      aggregateTimeout: 300, // Delay before rebuilding
+      ignored: /node_modules/,
+    };
+    return config;
+  },
+
   // Flexible iframe embedding
   async headers() {
     return [

@@ -34,7 +34,7 @@ export default function TrackingSection() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Track Your Package</h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-[hsl(var(--text-light))]">
               Enter your tracking number to see real-time delivery status
             </p>
           </div>
@@ -50,7 +50,7 @@ export default function TrackingSection() {
             />
             <button
               type="submit"
-              className="px-8 py-3 bg-[hsl(211,71%,58%)] text-white rounded font-semibold hover:bg-[hsl(211,71%,50%)] transition-colors flex items-center gap-2"
+              className="px-8 py-3 bg-[hsl(211,71%,58%)] !text-white rounded font-semibold hover:bg-[hsl(211,71%,50%)] transition-colors flex items-center gap-2"
             >
               <Search className="w-5 h-5" />
               Track
@@ -63,7 +63,7 @@ export default function TrackingSection() {
               <div className="flex items-center justify-between mb-6">
                 <div>
                   <h3 className="text-xl font-semibold mb-1">Tracking #{trackingResult.id}</h3>
-                  <p className="text-gray-600">{trackingResult.location}</p>
+                  <p className="text-[hsl(var(--text-light))]">{trackingResult.location}</p>
                 </div>
                 <div className="text-right">
                   <span className="inline-block px-4 py-2 bg-[hsl(211,71%,58%)] text-white rounded-full font-medium text-sm">
@@ -73,7 +73,7 @@ export default function TrackingSection() {
               </div>
 
               <div className="mb-6">
-                <p className="text-gray-600">
+                <p className="text-[hsl(var(--text-light))]">
                   <strong>Estimated Delivery:</strong> {trackingResult.estimatedDelivery}
                 </p>
               </div>
@@ -86,16 +86,16 @@ export default function TrackingSection() {
                       className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
                         step.completed
                           ? 'bg-[hsl(211,71%,58%)] text-white'
-                          : 'bg-gray-300 text-gray-600'
+                          : 'bg-gray-300 text-[hsl(var(--text-light))]'
                       }`}
                     >
                       {step.completed ? '✓' : index + 1}
                     </div>
                     <div className="flex-1">
-                      <p className={`font-medium ${step.completed ? 'text-gray-900' : 'text-gray-500'}`}>
+                      <p className={`font-medium ${step.completed ? 'text-[hsl(var(--text-dark))]' : 'text-[hsl(var(--text-muted))]'}`}>
                         {step.step}
                       </p>
-                      <p className="text-sm text-gray-500">{step.time}</p>
+                      <p className="text-sm text-[hsl(var(--text-muted))]">{step.time}</p>
                     </div>
                   </div>
                 ))}
@@ -108,17 +108,17 @@ export default function TrackingSection() {
             <div className="text-center">
               <div className="text-3xl mb-2">📦</div>
               <h4 className="font-semibold mb-1">Secure Handling</h4>
-              <p className="text-sm text-gray-600">Your items are handled with care</p>
+              <p className="text-sm text-[hsl(var(--text-light))]">Your items are handled with care</p>
             </div>
             <div className="text-center">
               <div className="text-3xl mb-2">🚚</div>
               <h4 className="font-semibold mb-1">Real-Time Updates</h4>
-              <p className="text-sm text-gray-600">Track your delivery every step</p>
+              <p className="text-sm text-[hsl(var(--text-light))]">Track your delivery every step</p>
             </div>
             <div className="text-center">
               <div className="text-3xl mb-2">⏱️</div>
               <h4 className="font-semibold mb-1">On-Time Delivery</h4>
-              <p className="text-sm text-gray-600">98% on-time delivery rate</p>
+              <p className="text-sm text-[hsl(var(--text-light))]">98% on-time delivery rate</p>
             </div>
           </div>
         </div>
